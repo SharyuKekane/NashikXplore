@@ -1,45 +1,79 @@
-import { Heart } from "lucide-react";
+import Link from "next/link";
+import { Heart, MapPin } from "lucide-react";
 
-const FOOTER_LINKS = [
-  { label: "Home", href: "#" },
-  { label: "Vendors", href: "#vendors" },
-  { label: "About", href: "#cta" },
-  { label: "Contact", href: "#" },
+const FOOTER_NAV = [
+  { label: "Home", href: "/" },
+  { label: "Explore", href: "/#vendors" },
+  { label: "Itinerary", href: "/itinerary" },
+  { label: "Vendors", href: "/vendor-dashboard" },
+  { label: "List Business", href: "/list-business" },
+];
+
+const FOOTER_LEGAL = [
   { label: "Privacy Policy", href: "#" },
+  { label: "Terms of Service", href: "#" },
+  { label: "Contact", href: "#" },
 ];
 
 export default function Footer() {
   return (
     <footer className="border-t border-border bg-card">
       <div className="mx-auto max-w-7xl px-6 py-12">
-        <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
+        <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
           {/* Brand */}
-          <div className="flex flex-col items-center gap-3 md:items-start">
-            <div className="flex items-center gap-2">
+          <div className="flex flex-col gap-4">
+            <Link href="/" className="flex items-center gap-1.5">
+              <MapPin size={20} className="text-primary" />
               <span className="text-xl font-bold text-primary">Nashik</span>
               <span className="text-xl font-bold text-accent">Xplore</span>
-            </div>
-            <p className="max-w-xs text-center text-sm leading-relaxed text-muted-foreground md:text-left">
+            </Link>
+            <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
               Empowering local businesses and connecting travelers with
               authentic Nashik experiences.
             </p>
           </div>
 
-          {/* Links */}
-          <nav className="flex flex-wrap items-center justify-center gap-6">
-            {FOOTER_LINKS.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-sm text-muted-foreground transition-colors hover:text-primary"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+          {/* Link columns */}
+          <div className="flex flex-wrap gap-16">
+            {/* Navigation */}
+            <div className="flex flex-col gap-3">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-foreground">
+                Navigate
+              </h4>
+              <nav className="flex flex-col gap-2">
+                {FOOTER_NAV.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+
+            {/* Legal */}
+            <div className="flex flex-col gap-3">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-foreground">
+                Legal
+              </h4>
+              <nav className="flex flex-col gap-2">
+                {FOOTER_LEGAL.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+          </div>
         </div>
 
-        {/* SDG 8 & Copyright */}
+        {/* Bottom bar */}
         <div className="mt-10 flex flex-col items-center gap-4 border-t border-border pt-8 md:flex-row md:justify-between">
           <div className="flex items-center gap-2 rounded-xl bg-muted px-4 py-2">
             <Heart size={14} className="text-primary" />

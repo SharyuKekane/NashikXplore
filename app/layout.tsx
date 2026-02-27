@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import { DM_Sans, Space_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import Header from '@/components/header'
+import Footer from '@/components/footer'
 import './globals.css'
 
 const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
@@ -41,7 +43,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.variable} ${spaceMono.variable} font-sans antialiased`}>
-        {children}
+        <div className="flex min-h-screen flex-col bg-background">
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
         <Analytics />
       </body>
     </html>
