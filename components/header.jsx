@@ -21,7 +21,7 @@ export default function Header() {
             Nashik
           </span>
           <span className="text-2xl font-bold tracking-tight text-accent">
-            Local
+            Xplore
           </span>
         </a>
 

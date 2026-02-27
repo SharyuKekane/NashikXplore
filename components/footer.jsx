@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-3 md:items-start">
             <div className="flex items-center gap-2">
               <span className="text-xl font-bold text-primary">Nashik</span>
-              <span className="text-xl font-bold text-accent">Local</span>
+              <span className="text-xl font-bold text-accent">Xplore</span>
             </div>
             <p className="max-w-xs text-center text-sm leading-relaxed text-muted-foreground md:text-left">
               Empowering local businesses and connecting travelers with
@@ -48,7 +48,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Nashik Local. All rights reserved.
+            &copy; {new Date().getFullYear()} NashikXplore. All rights reserved.
           </p>
         </div>
       </div>

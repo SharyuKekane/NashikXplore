@@ -7,7 +7,7 @@ const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
 const spaceMono = Space_Mono({ weight: ["400", "700"], subsets: ["latin"], variable: "--font-space-mono" });
 
 export const metadata: Metadata = {
-  title: 'Nashik Local — Discover Hidden Gems of Nashik',
+  title: 'NashikXplore — Discover Hidden Gems of Nashik',
   description: 'Explore authentic local vendors, artisans, and experiences in Nashik. Support local businesses and discover the heart of Indian culture.',
   generator: 'v0.app',
   icons: {

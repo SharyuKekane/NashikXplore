@@ -25,7 +25,7 @@ export default function CallToAction() {
           </h2>
 
           <p className="text-pretty text-lg leading-relaxed text-accent-foreground/80">
-            Join Nashik Local and connect with travelers looking for authentic
+            Join NashikXplore and connect with travelers looking for authentic
             experiences. Get discovered, grow your business, and be part of a
             movement that puts local culture first.
           </p>
