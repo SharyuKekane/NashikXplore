@@ -1,6 +1,10 @@
 'use client'
 
+<<<<<<< HEAD
 import { useToast } from '@/frontend/hooks/use-toast'
+=======
+import { useToast } from '@/hooks/use-toast'
+>>>>>>> 644fa83152b24f242ef76c2eb28f79a5235bff9e
 import {
   Toast,
   ToastClose,
