@@ -9,14 +9,10 @@ const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Explore", href: "/#vendors" },
   { label: "Itinerary", href: "/itinerary" },
-<<<<<<< HEAD
   { label: "Impact", href: "/impact" },
-=======
->>>>>>> 644fa83152b24f242ef76c2eb28f79a5235bff9e
   { label: "Live", href: "/admin" },
   { label: "Vendors", href: "/vendor-dashboard" },
 ];
-
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
