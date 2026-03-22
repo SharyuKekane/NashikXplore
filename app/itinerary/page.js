@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import ItineraryHero from "/components/itinerary-hero";
-import ItineraryForm from "/components/itinerary-form";
-import ItineraryResults from "/components/itinerary-results";
+import ItineraryHero from "../components/itinerary-hero";
+import ItineraryForm from "../components/itinerary-form";
+import ItineraryResults from "../components/itinerary-results";
 
 export default function ItineraryPage() {
   const [showResults, setShowResults] = useState(false);
