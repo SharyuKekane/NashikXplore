@@ -1,7 +1,7 @@
-import DashboardStats from "@/components/dashboard-stats";
-import DashboardListing from "@/components/dashboard-listing";
-import DashboardAnalytics from "@/components/dashboard-analytics";
-import DashboardBoostCta from "@/components/dashboard-boost-cta";
+import DashboardStats from "/components/dashboard-stats";
+import DashboardListing from "/components/dashboard-listing";
+import DashboardAnalytics from "/components/dashboard-analytics";
+import DashboardBoostCta from "/components/dashboard-boost-cta";
 
 export const metadata = {
   title: "Vendor Dashboard — NashikXplore",
