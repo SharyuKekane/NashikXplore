@@ -3,7 +3,7 @@
 import { useState } from "react";
 import ItineraryForm from "../../components/itinerary-form";
 import ItineraryResults from "../../components/itinerary-results";
-
+import ItineraryHero from '../../components/itinerary-hero';
 
 export default function ItineraryPage() {
   const [showResults, setShowResults] = useState(false);
