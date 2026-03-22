@@ -1,7 +1,7 @@
-import AdminMetrics from "../components/admin-metrics";
-import AdminVendorTable from "../components/admin-vendor-table";
-import AdminCrowdData from "../components/admin-crowd-data";
-import AdminItineraryLogs from "../components/admin-itinerary-logs";
+import AdminMetrics from "@/components/adminmetrics";
+import AdminVendorTable from "@/components/adminvendortable";
+import AdminCrowdData from "@/components/admincrowddata";
+import AdminItineraryLogs from "@/components/adminitinerarylogs";
 import { Shield } from "lucide-react";
 
 export const metadata = {
