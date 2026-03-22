@@ -1,6 +1,6 @@
-import DashboardStats from "@/components/dashboardstats";
-import DashboardListing from "@/components/dashboardlisting";
-import DashboardAnalytics from "@/components/dashboardanalytics";
+import DashboardStats from "@/components/dashboard-stats";
+import DashboardAnalytics from "@/components/dashboard-analytics";
+import DashboardListing from "@/components/dashboard-listing";
 import DashboardBoostCta from "@/components/dashboardboost-cta";
 
 export const metadata = {
